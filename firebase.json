@@ -1,0 +1,42 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "agua-pwa-22618",
+          "appId": "1:804181704830:android:0ce8080abe24ff68ca982f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "agua-pwa-22618",
+          "configurations": {
+            "android": "1:804181704830:android:0ce8080abe24ff68ca982f",
+            "ios": "1:804181704830:ios:522db0db2075bd69ca982f",
+            "macos": "1:804181704830:ios:522db0db2075bd69ca982f",
+            "web": "1:804181704830:web:5e1da2b3f5f02ef8ca982f",
+            "windows": "1:804181704830:web:8b141067b7c02b94ca982f"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
